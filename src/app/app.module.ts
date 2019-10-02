@@ -4,13 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { WebBluetoothModule } from '@manekinekko/angular-web-bluetooth';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WebBluetoothModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
